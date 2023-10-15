@@ -39,8 +39,7 @@ jobs:
           # Navigate to client, install dependencies, and build it
           cd ../Client
           rm -rf build
-          sudo npm install -g yarn
-          yarn install
-          yarn build || exit 1
+          npm install
+          npm run build || exit 1
           sudo nginx -t
           sudo systemctl restart nginx
