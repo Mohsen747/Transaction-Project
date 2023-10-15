@@ -31,10 +31,14 @@ jobs:
           # Navigate to server, install dependencies, and restart it
           cd server
           npm install
+          
+          # Ensure pm2 is installed globally
+          sudo npm install pm2 -g
           pm2 restart transaction-web
           
           # Navigate to client, install dependencies, and build it
           cd ../Client
+          rm -rf build
           yarn install
           yarn build
           sudo nginx -t

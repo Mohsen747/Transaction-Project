@@ -19,7 +19,7 @@ const SignIn = () => {
     <Wrapper>
       <InnerWrap>
         <SignInContainer>
-          <h2>Sign In To The Test4</h2>
+          <h2>Sign In</h2>
           <Form onSubmit={handleSubmit}>
             <FormGroup>
               <label>Email:</label>

@@ -108,7 +108,7 @@ const Header = () => {
     <>
       <Wrapper>
         <img src={Logo} style={{ width: "30px", borderRadius: "50%" }} />
-        <Company to="/">BodyBreak</Company>
+        <Company to="/">BodyBreak2</Company>
         <Container>
           <SearchBar
             type="text"
